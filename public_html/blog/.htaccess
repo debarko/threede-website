@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^blog\.threede\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.blog\.threede\.com$
+RewriteRule ^/?$ "http\:\/\/threede\.blog\.com\/" [R=301,L]
+

@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^blogadmin\.blog\.threede\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.blogadmin\.blog\.threede\.com$
+RewriteRule ^/?$ "http\:\/\/threede\.blog\.com\/wp\-login\.php" [R=301,L]
+
