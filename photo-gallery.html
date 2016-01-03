@@ -5,7 +5,11 @@
     <title>Threede</title>
     <meta charset="utf-8" />
     <style type="text/css">
+<<<<<<< HEAD
     #galleria{height:700px}
+=======
+    #galleria{height:700px; background: #fff}
+>>>>>>> gh-pages
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
@@ -59,6 +63,7 @@
         <section id="main" class="container">
             <section class="box special features">
                 <div id="galleria">
+<<<<<<< HEAD
                     <img src="photos/ashdyke/DykeatFinalStage.jpg" data-title="My title" data-description="My description">
                     <img src="photos/ashdyke/DykeatInitialStage.jpg" data-title="My title" data-description="My description">
                     <img src="photos/ashdyke/DykeatIntermediateStage.jpg" data-title="My title" data-description="My description">
@@ -91,6 +96,9 @@
 
                     <img src="/photos/waterpumping/PumpsinOperation.jpg" data-title="My title" data-description="My description">
                     <img src="/photos/waterpumping/WaterentryatSettlingTank.jpg" data-title="My title" data-description="My description">
+=======
+                    <img src="photos/ashdyke/DykeatFinalStage.jpg">
+>>>>>>> gh-pages
                 </div>
             </section>
         </section>
@@ -130,11 +138,81 @@
 
     // Load the classic theme
     Galleria.loadTheme('galleria.classic.min.js');
+<<<<<<< HEAD
 
     // Initialize Galleria
     Galleria.run('#galleria');
 
     </script>
+=======
+    Galleria.configure({
+        transition: 'fadeslide',
+        autoplay: 3000
+    });
+    Galleria.ready(function(options) {
+        this.lazyLoadChunks(3);
+        this.push(
+            {image: "photos/ashdyke/DykeatInitialStage.jpg", title: "XXC", description: "asdasdasd"},
+            {image: "photos/ashdyke/DykeatIntermediateStage.jpg", title: "XXC", description: "asdasdasd"},
+            {image: "photos/beltconveyors/InDustyApplication.jpg", title: "XXC", description: "asdasdasd"},
+            {image: "photos/denseslurrypumping/EntryatSlurrificationTank.jpg", title: "XXC", description: "asdasdasd"},
+            {image: "photos/denseslurrypumping/image2.jpg", title: "XXC", description: "asdasdasd"},
+            {image: "photos/denseslurrypumping/SlurrificationTank.jpg", title: "XXC", description: "asdasdasd"},
+            {image: "photos/equipments/GranularFeeder.jpg", title: "XXC", description: "asdasdasd"},
+            {image: "photos/equipments/SlagChainConveyor.jpg", title: "XXC", description: "asdasdasd"},
+            {image: "photos/overallplantview/PlantatNight.jpg", title: "XXC", description: "asdasdasd"},
+            {image: "photos/overallplantview/ThermalPowerPlant.jpg", title: "XXC", description: "asdasdasd"},
+            {image: "photos/pneumaticconveying/PressureConveyingofPowderedmaterial.jpg", title: "XXC", description: "asdasdasd"},
+            {image: "photos/pneumaticconveying/SuctionofPowderedmaterial.jpg", title: "XXC", description: "asdasdasd"},
+            {image: "photos/pneumaticconveying/VacuumConveyingThroughPipes.jpg", title: "XXC", description: "asdasdasd"},
+            {image: "photos/pneumaticconveying/VacuuPumping.jpg", title: "XXC", description: "asdasdasd"},
+            {image: "photos/pumphouses/PumpHouse.jpg", title: "XXC", description: "asdasdasd"},
+            {image: "photos/slurrypumping/SlurryPump.jpg", title: "XXC", description: "asdasdasd"},
+            {image: "photos/storagedevices/Twinsilo.jpg", title: "XXC", description: "asdasdasd"},
+            {image: "photos/structural/structural.jpg", title: "XXC", description: "asdasdasd"},
+            {image: "photos/structural/structural1.jpg", title: "XXC", description: "asdasdasd"},
+            {image: "photos/waterpumping/PumpsinOperation.jpg", title: "XXC", description: "asdasdasd"},
+            {image: "photos/waterpumping/WaterentryatSettlingTank.jpg", title: "XXC", description: "asdasdasd"}
+        );
+        this.attachKeyboard({
+            left: this.prev, // applies the native prev() function
+            right: this.next
+        });
+    });
+    Galleria.run('#galleria');
+    </script>
+    <!-- <img src="photos/ashdyke/DykeatInitialStage.jpg" data-title="My title" data-description="My description">
+    <img src="photos/ashdyke/DykeatIntermediateStage.jpg" data-title="My title" data-description="My description">
+    
+    <img src="photos/beltconveyors/InDustyApplication.jpg" data-title="My title" data-description="My description">
+
+    <img src="photos/denseslurrypumping/EntryatSlurrificationTank.jpg" data-title="My title" data-description="My description">
+    <img src="photos/denseslurrypumping/image2.jpg" data-title="My title" data-description="My description">
+    <img src="photos/denseslurrypumping/SlurrificationTank.jpg" data-title="My title" data-description="My description">
+
+    <img src="/photos/equipments/GranularFeeder.jpg" data-title="My title" data-description="My description">
+    <img src="/photos/equipments/SlagChainConveyor.jpg" data-title="My title" data-description="My description">
+
+    <img src="/photos/overallplantview/PlantatNight.jpg" data-title="My title" data-description="My description">
+    <img src="/photos/overallplantview/ThermalPowerPlant.jpg" data-title="My title" data-description="My description">
+
+    <img src="/photos/pneumaticconveying/PressureConveyingofPowderedmaterial.jpg" data-title="My title" data-description="My description">
+    <img src="/photos/pneumaticconveying/SuctionofPowderedmaterial.jpg" data-title="My title" data-description="My description">
+    <img src="/photos/pneumaticconveying/VacuumConveyingThroughPipes.jpg" data-title="My title" data-description="My description">
+    <img src="/photos/pneumaticconveying/VacuuPumping.jpg" data-title="My title" data-description="My description">
+
+    <img src="/photos/pumphouses/PumpHouse.jpg" data-title="My title" data-description="My description">
+
+    <img src="/photos/slurrypumping/SlurryPump.jpg" data-title="My title" data-description="My description">
+
+    <img src="/photos/storagedevices/Twinsilo.jpg" data-title="My title" data-description="My description">
+
+    <img src="/photos/structural/structural.jpg" data-title="My title" data-description="My description">
+    <img src="/photos/structural/structural1.jpg" data-title="My title" data-description="My description">
+
+    <img src="/photos/waterpumping/PumpsinOperation.jpg" data-title="My title" data-description="My description">
+    <img src="/photos/waterpumping/WaterentryatSettlingTank.jpg" data-title="My title" data-description="My description"> -->
+>>>>>>> gh-pages
 </body>
 
 </html>
